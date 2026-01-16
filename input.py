@@ -349,7 +349,7 @@ fruits = {'apple', 'pineapple', 'mango', 'banana', 'orange'}
 # fruits.sort()
 # fruits.reverse()
 # fruits.add('orange')
-fruits.pop()
+
 
 
 print(fruits)

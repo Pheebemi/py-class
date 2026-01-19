@@ -429,4 +429,4 @@ collections = [fruits,vegetables,meat]
 # print(collections[1] [3])
 for collection in collections:
     for item in collection:
-        print(item)
+        print(item) iuuoufoisifo

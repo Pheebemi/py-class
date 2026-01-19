@@ -352,4 +352,81 @@ fruits = {'apple', 'pineapple', 'mango', 'banana', 'orange'}
 
 
 
-print(fruits)
+# # print(fruits)
+
+# foods = []
+# prices = []
+# total = 0
+
+# while True:
+#     food = input('Enter a food or Q to exit: ')
+#     if food == 'q':
+#         break
+#     else:
+#         price= float(input(f'enter a price for {food} : $'))
+#         foods.append(food)
+#         prices.append(price)
+
+# print('------- your cart ----------')
+# for food in foods:
+#     print(food, end=' ')
+# print()
+
+# print('----your cart total------')
+# for price in prices:
+#     total += price
+# print(f'your total is {total}')
+
+# fruits = ('banana', 'pineapple', 'orange', 'apple')
+
+#print(len(fruits))
+
+# print(fruits[2])
+# fruits.remove('pineapple')
+# fruits.append('mango')
+# fruits.insert(0, 'mango')
+# fruits.clear()
+# fruits.sort()
+# fruits.reverse()
+
+# fruits.add('banana')
+# fruits.pop()
+
+
+# for fruit in fruits:
+#     print(fruit)
+
+# foods = []
+# prices = []
+# total = 0
+
+# while True:
+#     food = input('Enter a food item or q to exit')
+#     if food.lower() == 'q':
+#             break
+#     else:
+#         price= float(input(f'Enter the price for {food}: $'))
+#         foods.append(food)
+#         prices.append(price)
+
+# print('-------your cart-------')
+
+# for food in foods:
+#     print(food, end=' ')
+# print()
+# print('-------your total-------')
+
+# for price in prices:
+#     print(price)
+#     # print(f'your total is {total}')
+
+fruits = ['banana', 'pineapple', 'orange', 'apple']
+vegetables = ['carrot', 'tomatoe', 'cabbage', 'spinage']
+meat=['chicken', 'beef', 'turkey', 'mutton']
+
+collections = [fruits,vegetables,meat]
+
+# print(collections[1] [3])
+for collection in collections:
+    for item in collection:
+        print(item)

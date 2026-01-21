@@ -420,13 +420,122 @@ fruits = {'apple', 'pineapple', 'mango', 'banana', 'orange'}
 #     print(price)
 #     # print(f'your total is {total}')
 
-fruits = ['banana', 'pineapple', 'orange', 'apple']
-vegetables = ['carrot', 'tomatoe', 'cabbage', 'spinage']
-meat=['chicken', 'beef', 'turkey', 'mutton']
+# fruits = ['banana', 'pineapple', 'orange', 'apple']
+# vegetables = ['carrot', 'tomatoe', 'cabbage', 'spinage']
+# meat=['chicken', 'beef', 'turkey', 'mutton']
 
-collections = [fruits,vegetables,meat]
+# collections = [fruits,vegetables,meat]
 
-# print(collections[1] [3])
-for collection in collections:
-    for item in collection:
-        print(item) iuuoufoisifo
+# # print(collections[1] [3])
+# for collection in collections:
+#     for item in collection:
+#         print(item)
+
+# num_pad= ((1,2,3),(4,5,6),(7,8,9),('*',0,
+# '#'))
+
+# for row in num_pad:
+#     for num in row:
+#         print(num, end=' ')
+#     print()
+
+
+# questions = (
+#     'what is the capital of japan',
+#     'what is the name of our galaxy',
+#     'which animal lays the largest egg',
+#     'how any bones is in the human body')
+
+# options=(('A. japan','B.tokyo','C. jos','D. nagasaki'),
+#     ('A. moon','B. venus','C. milky way','D.sun'),
+#     ('A. whale','B. crocodile','C.Elephant','D. ostrich'),
+#     ('A.206','B.543','C.455','D.207'))
+
+# answers = ('B','C','D','A')
+# guesses = ['A','B','C', 'B']
+# score = 0
+# question_num = 0
+
+# for question in questions:
+#     print('-------------------')
+#     print(question)
+#     for option in options[question_num]:
+#         print(option)
+
+
+
+
+#     guess = input('enter an answer, A,B,C,D: ')
+#     guesses.append(guess)
+
+#     if guess ==answers[question_num]:
+#         score +=1
+#         print('Correct')
+#     else:
+#         print(f'{answer[question_num]} is the correct answer')
+#     question_num += 1
+
+
+# print('--------------------------')
+# print('------------Result--------')
+# print('--------------------------')
+
+
+# for guess in guesses:
+#     print(guess)
+
+
+# num_pad = ((1,2,3),(4,5,6),(7,8,9),('*',0,'#'))
+
+# for row in num_pad:
+#     for num in row:
+#         print(num, end=' ')
+#     print()
+
+
+questions =(
+    'what is the capital of japan',
+    'what is the name of our galaxy',
+    'which animal lays the largest egg',
+    'how any bones is in the human body'
+)
+
+options = (('A. japan','B.tokyo','C. jos','D. nagasaki'),
+  ('A. moon','B. venus','C. milky way','D.sun'),
+  ('A. whale','B. crocodile','C.Elephant','D. ostrich'),
+ ('A.206','B.543','C.455','D.207'))
+
+answer = ('B','C','D','A')
+guesses = []
+score = 0
+question_num = 0
+
+for question in questions:
+    print('-------------------')
+    print(question)
+    for option in options[question_num]:
+        print(option)
+
+
+    guess = input('Enter your answer A B C D : ').upper()
+    guesses.append(guess)
+    if guess== answer[question_num]:
+        score+=1
+        print('Correct')
+    else:
+        print('Incorrect')
+        print(f'{answer[question_num]} is the correct answer')
+    question_num += 1
+
+print('------------------')
+print('------result--------')
+print('------------------')
+for guess in guesses:
+    print(guess, end=' ')
+print()
+for x in answer:
+    print(x, end=' ')
+
+score = int(score/ len(questions) * 100)
+
+print(f'{score}%')

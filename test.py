@@ -1,0 +1,1 @@
+capitals = {"USA": "washington dc", ""}

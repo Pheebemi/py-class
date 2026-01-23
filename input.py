@@ -493,49 +493,116 @@ fruits = {'apple', 'pineapple', 'mango', 'banana', 'orange'}
 #     print()
 
 
-questions =(
-    'what is the capital of japan',
-    'what is the name of our galaxy',
-    'which animal lays the largest egg',
-    'how any bones is in the human body'
-)
+# questions =(
+#     'what is the capital of japan',
+#     'what is the name of our galaxy',
+#     'which animal lays the largest egg',
+#     'how any bones is in the human body'
+# )
 
-options = (('A. japan','B.tokyo','C. jos','D. nagasaki'),
-  ('A. moon','B. venus','C. milky way','D.sun'),
-  ('A. whale','B. crocodile','C.Elephant','D. ostrich'),
- ('A.206','B.543','C.455','D.207'))
+# options = (('A. japan','B.tokyo','C. jos','D. nagasaki'),
+#   ('A. moon','B. venus','C. milky way','D.sun'),
+#   ('A. whale','B. crocodile','C.Elephant','D. ostrich'),
+#  ('A.206','B.543','C.455','D.207'))
 
-answer = ('B','C','D','A')
-guesses = []
-score = 0
-question_num = 0
+# answer = ('B','C','D','A')
+# guesses = []
+# score = 0
+# question_num = 0
 
-for question in questions:
-    print('-------------------')
-    print(question)
-    for option in options[question_num]:
-        print(option)
+# for question in questions:
+#     print('-------------------')
+#     print(question)
+#     for option in options[question_num]:
+#         print(option)
 
 
-    guess = input('Enter your answer A B C D : ').upper()
-    guesses.append(guess)
-    if guess== answer[question_num]:
-        score+=1
-        print('Correct')
-    else:
-        print('Incorrect')
-        print(f'{answer[question_num]} is the correct answer')
-    question_num += 1
+#     guess = input('Enter your answer A B C D : ').upper()
+#     guesses.append(guess)
+#     if guess== answer[question_num]:
+#         score+=1
+#         print('Correct')
+#     else:
+#         print('Incorrect')
+#         print(f'{answer[question_num]} is the correct answer')
+#     question_num += 1
 
-print('------------------')
-print('------result--------')
-print('------------------')
-for guess in guesses:
-    print(guess, end=' ')
-print()
-for x in answer:
-    print(x, end=' ')
+# print('------------------')
+# print('------result--------')
+# print('------------------')
+# for guess in guesses:
+#     print(guess, end=' ')
+# print()
+# for x in answer:
+#     print(x, end=' ')
 
-score = int(score/ len(questions) * 100)
+# score = int(score/ len(questions) * 100)
 
-print(f'{score}%')
+# print(f'{score}%')
+
+# questions =(
+#     'is tokoyo the capital of japan?',
+#     'what is the name of our galaxy',
+#     'which animal lays the largest egg',
+#     'how any bones is in the human body'
+# )
+
+# options = (('true', 'false'),
+#     ('true', 'false'),
+#     ('true', 'false'),
+#     ('true', 'false'))
+
+# answer = ('true','false','false','true')
+# guesses = []
+# score = 0
+# question_num = 0
+
+# for question in questions:
+#     print('-------------------')
+#     print(question)
+#     for option in options[question_num]:
+#         print(option)
+
+
+#     guess = input('Enter your answer true or false').lower()
+#     guesses.append(guess)
+#     if guess== answer[question_num]:
+#         score+=1
+#         print('Correct')
+#     else:
+#         print('Incorrect')
+#         print(f'{answer[question_num]} is the correct answer')
+#     question_num += 1
+
+# print('------------------')
+# print('------result--------')
+# print('------------------')
+# for guess in guesses:
+#     print(guess, end=' ')
+# print()
+# for x in answer:
+#     print(x, end=' ')
+
+# score = int(score/ len(questions) * 100)
+
+# print(f'{score}%')
+
+capitals = {"USA": "Washington D.C", "Nigeria":"Abuja", "UAE": "Dubai" ,"South-Africa":"Johanerburg"}
+
+#capital = capitals.get('China')
+#capital = capitals.update({"Ghana":"Accra"})
+#capital = capitals.update({'USA':"Texas"})
+#capital = capitals.pop("USA")
+#capital = capitals.popitem()
+
+capital = capitals.items()
+
+# for x in capitals:
+#     print(x)
+
+#print(capital)
+# for keys, values in capitals.items():
+#     print(f'{keys} : {values}')
+
+
+

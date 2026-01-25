@@ -606,3 +606,110 @@ capital = capitals.items()
 
 
 
+# import random
+
+
+# low = 1
+# high = 6
+# print(random.randint(low,high))
+
+# number = random.random()
+
+# print(number)
+
+# options= ('rock','papper','scissors')
+
+# player = None
+# computer = random.choice(options)
+ 
+# while player not in options:
+#     player = input('Enter your answer')
+
+# print(f'player: {player}')
+# print(f'computer: {computer}')
+
+# if player == computer:
+#     print('tie')
+# elif player == 'rock' and computer =='scissors':
+#     print('You won')
+# elif player == 'papper' and computer =='rock':
+#     print('you won')
+# elif player == 'scissors' and computer == 'papper':
+#     print('you won')
+# else:
+#     print('you lose') 
+
+
+
+# import random
+
+# # num = random.randint(1,9)
+
+# num = random.random()
+
+# print(num)
+
+# import random
+# options = ('rock','paper','scissors')
+
+# player = None
+
+# computer = random.choice(options)
+
+# while player not in options:
+#     print('enter the right option')
+#     player = input('enter an option')
+# print(computer)
+# if player == computer :
+#     print('tie')
+# elif player == 'paper' and computer == 'rock':
+#     print('you won')
+# elif player == 'scissors' and computer == 'paper':
+#     print('you won')
+# elif player == 'rock' and computer == 'scissors':
+#     print('you won')
+# else:
+#     print('you lose')
+
+
+# def happy_birthday(age, name):
+#     print(f'happy birthday {name}')
+#     print(f'youre {age} years old')
+
+# happy_birthday('Emmanuel', 40)
+# happy_birthday('Fatima', 18)
+
+# def display_invoice(username, ammount, due_date):
+#     print(f'hello {username}')
+#     print(f'your invoice is ${ammount} and due on {due_date}')
+
+
+# display_invoice('Emmanuel', 1000, '01/01/2055')
+
+
+# def add(a,b):
+#     z = a + b
+#     return z
+
+# def subtract(a,b):
+#     z = a -b
+#     return z
+
+# print(add(1,4))
+# print(subtract(5,2))
+
+# def full_name(first,last):
+#     first.capitalize()
+#     last.capitalize()
+
+#     return first, '', last
+
+
+# name = full_name('Emmanuel' , 'Lemuel')
+
+# print(name)
+
+def net_price(ammount, discount=0.1,tax=0.05):
+    price = ammount * (1-discount) * (1+tax)
+    return price
+print(net_price(10000))

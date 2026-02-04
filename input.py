@@ -709,7 +709,64 @@ capital = capitals.items()
 
 # print(name)
 
-def net_price(ammount, discount=0.1,tax=0.05):
-    price = ammount * (1-discount) * (1+tax)
-    return price
-print(net_price(10000))
+# def net_price(ammount, discount=0.1,tax=0.05):
+#     price = ammount * (1-discount) * (1+tax)
+#     return price
+# print(net_price(10000))
+
+
+# def bio_data(name, address, phone_number, age):
+#     print(f'{name}, {address}, {phone_number}, {age}') 
+
+# bio_data( address='jalingo', phone_number='1234567890' , age=12, name='emmanuel')   
+
+# for x in range( 1, 11):
+#     print(x, end='')
+
+# print('1', '2', '3', '4', sep='@')
+
+
+
+# def add(a,b):
+#     return a + b 
+# print(add(1,2, 3))
+
+# def add(*args):
+#     total = 0
+#     for arg in args:
+#         total += arg 
+#     return total
+# print(add(1,2,3,5))
+
+# def name(*args):
+#     for arg in args:
+
+#         print(args.sort())
+
+
+# name("Dr", "Emmanuel", "Lemuel")
+
+# def address(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f" {key} : {value}")
+# address(street="123", state="Taraba", zip="12345", lga="jalingo")
+
+
+def shipping_details(*args, **kwargs):
+    for arg in args:
+        print(arg, end=" ")
+    print()
+    if "apt" in kwargs:
+        print(f"{kwargs.get('street')} {kwargs.get('state')}  {kwargs.get('apt')}")
+    else:
+        print(f"{kwargs.get('street')} {kwargs.get('state')}")
+    print(f"{kwargs.get('zip')} {kwargs.get('lga')}")
+
+
+shipping_details("Engr", "Emmanuel", "Lemuel",
+                street="123",
+                state="Taraba", 
+                apt="3663",
+                zip="12345", 
+                lga="jalingo")
+                

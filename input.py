@@ -752,21 +752,101 @@ capital = capitals.items()
 # address(street="123", state="Taraba", zip="12345", lga="jalingo")
 
 
-def shipping_details(*args, **kwargs):
-    for arg in args:
-        print(arg, end=" ")
-    print()
-    if "apt" in kwargs:
-        print(f"{kwargs.get('street')} {kwargs.get('state')}  {kwargs.get('apt')}")
-    else:
-        print(f"{kwargs.get('street')} {kwargs.get('state')}")
-    print(f"{kwargs.get('zip')} {kwargs.get('lga')}")
+# def shipping_details(*args, **kwargs):
+#     for arg in args:
+#         print(arg, end=" ")
+#     print()
+#     if "apt" in kwargs:
+#         print(f"{kwargs.get('street')} {kwargs.get('state')}  {kwargs.get('apt')}")
+#     else:
+#         print(f"{kwargs.get('street')} {kwargs.get('state')}")
+#     print(f"{kwargs.get('zip')} {kwargs.get('lga')}")
 
 
-shipping_details("Engr", "Emmanuel", "Lemuel",
-                street="123",
-                state="Taraba", 
-                apt="3663",
-                zip="12345", 
-                lga="jalingo")
+# shipping_details("Engr", "Emmanuel", "Lemuel",
+#                 street="123",
+#                 state="Taraba", 
+#                 apt="3663",
+#                 zip="12345", 
+#                 lga="jalingo")
                 
+
+
+# name = "emmanuel"
+
+# player = input('enter a letter:' )
+
+# if player not in name:
+#     print(f'{player} not found')
+# else:
+#     print(f' {player} is found')
+
+# students = {'Emmanuel', 'Hauwau', 'Fatima'}
+
+# player = input('Enter a student name: ')
+
+# if player in students:
+#     print(f" {player} is found")
+# else:
+#     print(f"{player} not found")
+
+# grades = {'Emmanuel':'A',
+#           'Fatima':'B',
+#           'Hauwau':'C'}
+
+# student=input('enter a student name')
+
+# if student in grades:
+#     print(f'{student} your grade is {grades[student]}')
+# else:
+#     print(f'{student} not found')
+
+# lists= []
+# for list in range(1,11):
+#     lists.append(list * 2)
+
+# print(lists)
+
+# lists = [list*2 for list in range(1,11)]
+# triples =[list *3 for list in range(1,11)]
+
+# print(triples)
+
+# fruits = ['Banana', 'Orange','Apple']
+# fruits= [fruit.upper() for fruit in fruits]
+
+# print(fruits)
+
+# numbers=[1,-2,5,-7,6,-4,8,25]
+
+# positve=[num for num in numbers if num>=0]
+# negetive=[num for num in numbers if num<0]
+# even = [num for num in numbers if num % 2 ==0]
+# odd = [num for num in numbers if num % 2 ]
+
+
+# print(odd)
+
+# grades = [49,44,70,24,22,78,22,99,23]
+
+# high_grades = [grade for grade in grades if grade>=60]
+
+# print(high_grades)
+
+# modules
+
+# print(help('modules'))
+
+# import math
+# import math as emma
+# from math import e
+
+# a,b,c,d,e= 1,2,3,4,5
+# print(a * e)
+# print(b * e)
+# print(c * e)
+# print(d * e)
+
+import example as emma
+
+print(emma.pi)
